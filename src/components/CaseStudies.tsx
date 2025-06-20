@@ -1,9 +1,13 @@
 
 import { ArrowRight, Calendar, Users, TrendingUp, TreeDeciduous } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const CaseStudies = () => {
+  const navigate = useNavigate();
+
   const caseStudies = [
     {
+      id: 1,
       title: "Digital Transformation Initiative",
       company: "Global Technology Company",
       duration: "18 months",
@@ -16,9 +20,11 @@ const CaseStudies = () => {
         "Decreased time-to-market for new features by 50%",
         "Achieved 99.9% system uptime during transition"
       ],
-      insights: "This project taught me the critical importance of change management and stakeholder communication in large-scale transformations. Success wasn't just about technology—it was about people."
+      insights: "This project taught me the critical importance of change management and stakeholder communication in large-scale transformations. Success wasn't just about technology—it was about people.",
+      route: "/case-study-1"
     },
     {
+      id: 2,
       title: "Market Expansion Strategy",
       company: "Growing SaaS Company",
       duration: "12 months",
@@ -31,7 +37,8 @@ const CaseStudies = () => {
         "Built local teams in key regions",
         "Established strategic partnerships with 8+ vendors"
       ],
-      insights: "International expansion requires deep cultural sensitivity and local partnerships. The key was balancing global consistency with local adaptation."
+      insights: "International expansion requires deep cultural sensitivity and local partnerships. The key was balancing global consistency with local adaptation.",
+      route: "/case-study-2"
     }
   ];
 
@@ -94,9 +101,19 @@ const CaseStudies = () => {
                   </div>
                 </div>
 
-                <div className="bg-sage/10 rounded-xl p-6 border border-sage/20">
+                <div className="bg-sage/10 rounded-xl p-6 border border-sage/20 mb-6">
                   <h4 className="text-xl font-bold text-forest-dark mb-3">Key Insights</h4>
                   <p className="text-forest-medium leading-relaxed italic">{study.insights}</p>
+                </div>
+
+                <div className="flex justify-end">
+                  <button
+                    onClick={() => navigate(study.route)}
+                    className="inline-flex items-center space-x-2 px-6 py-3 bg-forest-dark text-white rounded-lg hover:bg-forest-medium transition-all duration-300 font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  >
+                    <span>Read Full Case Study</span>
+                    <ArrowRight size={18} />
+                  </button>
                 </div>
               </div>
             </div>
