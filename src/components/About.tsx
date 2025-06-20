@@ -62,19 +62,19 @@ const About = () => {
             <div className="space-y-4">
               <div className="flex justify-between border-b border-sage/20 pb-2">
                 <span className="text-forest-medium">Years of Experience</span>
-                <span className="font-semibold text-forest-dark">[X] years</span>
+                <span className="font-semibold text-forest-dark">25+ years</span>
               </div>
               <div className="flex justify-between border-b border-sage/20 pb-2">
                 <span className="text-forest-medium">Teams Led</span>
-                <span className="font-semibold text-forest-dark">[X]+ people</span>
+                <span className="font-semibold text-forest-dark">18+ people</span>
               </div>
               <div className="flex justify-between border-b border-sage/20 pb-2">
                 <span className="text-forest-medium">Projects Delivered</span>
-                <span className="font-semibold text-forest-dark">[X]+ projects</span>
+                <span className="font-semibold text-forest-dark">1000+ projects</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-forest-medium">Favorite Quote</span>
-                <span className="font-semibold text-forest-dark text-right">"[Your quote]"</span>
+                <span className="font-semibold text-forest-dark text-right">"We are all people, working with other people to help people" - Me</span>
               </div>
             </div>
           </div>
