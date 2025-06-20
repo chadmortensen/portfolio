@@ -30,7 +30,7 @@ const Hero = () => {
             Hello, I'm
             <span className="block bg-gradient-to-r from-sage to-moss bg-clip-text text-green-950">Chad Mortensen</span>
           </h1>
-          
+          <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-md md:text-4xl text-green-950 font-bold">Design leadership that scales teams, shapes strategy, and unites people.</p>
           <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-md md:text-xl text-center text-slate-100">I’m a product design leader with 25+ years of experience turning complex problems into meaningful outcomes — by guiding teams, shaping culture, and building thoughtful, scalable design solutions across eCommerce, health tech, and omnichannel platforms.
         </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
