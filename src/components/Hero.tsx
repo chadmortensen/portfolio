@@ -12,7 +12,7 @@ const Hero = () => {
   return <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden mountain-bg">
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-10">
-        <TreePine className="absolute top-20 left-10 text-forest-dark animate-float" size={32} />
+        
         <TreePine className="absolute top-32 right-20 text-forest-medium" size={28} style={{
         animationDelay: '2s'
       }} />
