@@ -20,9 +20,9 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
-          <div>
-            <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
+        <div className="flex justify-center">
+          <div className="max-w-lg">
+            <h3 className="text-2xl font-bold mb-6 text-center">Get In Touch</h3>
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
                 <div className="bg-sage p-3 rounded-lg">
@@ -70,66 +70,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="bg-forest-medium/50 backdrop-blur-sm rounded-xl p-8 border border-sage/20">
-            <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
-            <form className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-sage mb-2">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full px-4 py-3 bg-forest-light/50 border border-sage/30 rounded-lg focus:ring-2 focus:ring-sage focus:border-transparent text-white placeholder-sage/70"
-                  placeholder="Your name"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-sage mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full px-4 py-3 bg-forest-light/50 border border-sage/30 rounded-lg focus:ring-2 focus:ring-sage focus:border-transparent text-white placeholder-sage/70"
-                  placeholder="your.email@example.com"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-sage mb-2">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  className="w-full px-4 py-3 bg-forest-light/50 border border-sage/30 rounded-lg focus:ring-2 focus:ring-sage focus:border-transparent text-white placeholder-sage/70"
-                  placeholder="Let's discuss..."
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-sage mb-2">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="w-full px-4 py-3 bg-forest-light/50 border border-sage/30 rounded-lg focus:ring-2 focus:ring-sage focus:border-transparent text-white placeholder-sage/70"
-                  placeholder="Tell me about your project or opportunity..."
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                className="w-full px-6 py-3 bg-sage text-forest-dark rounded-lg hover:bg-sage/90 transition-colors duration-200 font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-              >
-                Send Message
-              </button>
-            </form>
           </div>
         </div>
 
