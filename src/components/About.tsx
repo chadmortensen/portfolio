@@ -27,7 +27,7 @@ const About = () => {
               <div>
                 <h3 className="text-xl font-semibold text-forest-dark mb-2">Background</h3>
                 <p className="text-forest-medium leading-relaxed">
-                  With over [X] years of experience in [your field], I've had the privilege of 
+                  With over 25 years of experience in Product Design, I've had the privilege of 
                   leading diverse teams and driving transformational change across multiple organizations. 
                   My journey has taken me from [early career] to [current role], where I've consistently 
                   delivered results that matter.
