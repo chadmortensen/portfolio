@@ -26,10 +26,7 @@ const About = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-forest-dark mb-2">Background</h3>
-                <p className="text-forest-medium leading-relaxed">With 25+ years in product design and 12+ in leadership, I’ve led teams through growth, change, and innovation — from the scale of Walmart to the creative complexity of Etsy. </p>
-                <p className="text-forest-medium leading-relaxed"> At Etsy, I directed design across Fulfillment, Search, and Ads — setting strategy, mentoring leaders, and aligning cross-functional teams around clear goals and outcomes. </p>
-                <p className="text-forest-medium leading-relaxed">At Walmart, I led major eCommerce initiatives, from rethinking grocery pickup during the pandemic to building more intuitive fashion and registry experiences.</p>
-                <p className="text-forest-medium leading-relaxed">Throughout my career, one thing has stayed constant: a commitment to building thoughtful, human-centered experiences — and teams empowered to deliver their best work.                </p>
+                <p className="text-forest-medium leading-relaxed">With 25+ years in product design and over a decade in leadership, I’ve guided teams through growth and change at companies like Etsy and Walmart—shaping strategy, mentoring leaders, and aligning cross-functional teams. At Etsy, I led design for Fulfillment, Search, and Ads; at Walmart, I drove key eCommerce initiatives, including reimagining grocery pickup during the pandemic. Across every role, I’ve remained committed to crafting thoughtful, human-centered experiences and building teams empowered to do their best work.</p>
               </div>
             </div>
 
