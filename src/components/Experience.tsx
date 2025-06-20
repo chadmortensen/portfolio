@@ -1,5 +1,5 @@
 
-import { Briefcase, Calendar } from "lucide-react";
+import { Briefcase, Calendar, TreePine } from "lucide-react";
 
 const Experience = () => {
   const experiences = [
@@ -39,11 +39,17 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="experience" className="py-20 bg-white relative">
+      {/* Decorative elements */}
+      <div className="absolute inset-0 opacity-5">
+        <TreePine className="absolute top-20 left-10 text-forest-dark" size={40} />
+        <TreePine className="absolute bottom-40 right-20 text-moss" size={36} />
+      </div>
+
+      <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Experience</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-forest-dark mb-6">Experience</h2>
+          <p className="text-xl text-forest-medium max-w-3xl mx-auto">
             A journey of growth, leadership, and meaningful impact across diverse industries and challenges.
           </p>
         </div>
@@ -52,33 +58,33 @@ const Experience = () => {
           {experiences.map((experience, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300"
+              className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-sage/20 hover:border-sage/40"
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div className="flex items-start space-x-4 mb-4 md:mb-0">
-                  <div className="bg-blue-100 p-3 rounded-lg">
-                    <Briefcase className="text-blue-600" size={24} />
+                  <div className="bg-sage/20 p-3 rounded-lg">
+                    <Briefcase className="text-forest-dark" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900">{experience.title}</h3>
-                    <p className="text-lg text-blue-600 font-medium">{experience.company}</p>
+                    <h3 className="text-xl font-bold text-forest-dark">{experience.title}</h3>
+                    <p className="text-lg text-moss font-medium">{experience.company}</p>
                   </div>
                 </div>
-                <div className="flex items-center space-x-2 text-gray-500">
+                <div className="flex items-center space-x-2 text-forest-medium">
                   <Calendar size={16} />
                   <span className="font-medium">{experience.period}</span>
                 </div>
               </div>
               
-              <p className="text-gray-600 mb-6 leading-relaxed">{experience.description}</p>
+              <p className="text-forest-medium mb-6 leading-relaxed">{experience.description}</p>
               
               <div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-3">Key Achievements</h4>
+                <h4 className="text-lg font-semibold text-forest-dark mb-3">Key Achievements</h4>
                 <ul className="grid md:grid-cols-2 gap-2">
                   {experience.achievements.map((achievement, achievementIndex) => (
                     <li key={achievementIndex} className="flex items-start space-x-2">
-                      <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-gray-600">{achievement}</span>
+                      <div className="w-2 h-2 bg-sage rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-forest-medium">{achievement}</span>
                     </li>
                   ))}
                 </ul>

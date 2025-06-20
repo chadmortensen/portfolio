@@ -1,5 +1,5 @@
 
-import { TrendingUp, Shield, Rocket, Star } from "lucide-react";
+import { TrendingUp, Shield, Rocket, Star, River } from "lucide-react";
 
 const Value = () => {
   const valueProps = [
@@ -26,11 +26,17 @@ const Value = () => {
   ];
 
   return (
-    <section id="value" className="py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="value" className="py-20 bg-white relative">
+      {/* Decorative elements */}
+      <div className="absolute inset-0 opacity-5">
+        <River className="absolute top-20 left-1/4 text-forest-dark" size={44} />
+        <River className="absolute bottom-40 right-1/3 text-moss" size={40} />
+      </div>
+
+      <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Value I Bring</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-forest-dark mb-6">Value I Bring</h2>
+          <p className="text-xl text-forest-medium max-w-3xl mx-auto">
             Organizations partner with me to unlock their potential and achieve breakthrough results through strategic leadership and operational excellence.
           </p>
         </div>
@@ -39,43 +45,43 @@ const Value = () => {
           {valueProps.map((value, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300"
+              className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-sage/20 hover:border-sage/40 group"
             >
               <div className="flex items-start space-x-4">
-                <div className="bg-gradient-to-br from-blue-100 to-purple-100 p-3 rounded-lg">
-                  <value.icon className="text-blue-600" size={24} />
+                <div className="nature-accent p-3 rounded-lg group-hover:scale-110 transition-transform duration-300">
+                  <value.icon className="text-white" size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{value.description}</p>
+                  <h3 className="text-xl font-bold text-forest-dark mb-3">{value.title}</h3>
+                  <p className="text-forest-medium leading-relaxed">{value.description}</p>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="bg-white rounded-2xl p-8 md:p-12 shadow-sm">
+        <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-xl border border-sage/30">
           <div className="text-center mb-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Measurable Impact</h3>
-            <p className="text-lg text-gray-600">Results that demonstrate the value of strategic leadership</p>
+            <h3 className="text-2xl md:text-3xl font-bold text-forest-dark mb-4">Measurable Impact</h3>
+            <p className="text-lg text-forest-medium">Results that demonstrate the value of strategic leadership</p>
           </div>
           
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">[X]%</div>
-              <p className="text-gray-600">Revenue Growth</p>
+              <div className="text-3xl md:text-4xl font-bold text-moss mb-2">[X]%</div>
+              <p className="text-forest-medium">Revenue Growth</p>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-purple-600 mb-2">[X]%</div>
-              <p className="text-gray-600">Efficiency Improvement</p>
+              <div className="text-3xl md:text-4xl font-bold text-forest-medium mb-2">[X]%</div>
+              <p className="text-forest-medium">Efficiency Improvement</p>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-green-600 mb-2">[X]%</div>
-              <p className="text-gray-600">Team Satisfaction</p>
+              <div className="text-3xl md:text-4xl font-bold text-sage mb-2">[X]%</div>
+              <p className="text-forest-medium">Team Satisfaction</p>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-orange-600 mb-2">$[X]M</div>
-              <p className="text-gray-600">Cost Savings</p>
+              <div className="text-3xl md:text-4xl font-bold text-cedar mb-2">$[X]M</div>
+              <p className="text-forest-medium">Cost Savings</p>
             </div>
           </div>
         </div>

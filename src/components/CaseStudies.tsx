@@ -1,5 +1,5 @@
 
-import { ArrowRight, Calendar, Users, TrendingUp } from "lucide-react";
+import { ArrowRight, Calendar, Users, TrendingUp, TreeDeciduous } from "lucide-react";
 
 const CaseStudies = () => {
   const caseStudies = [
@@ -36,30 +36,36 @@ const CaseStudies = () => {
   ];
 
   return (
-    <section id="case-studies" className="py-20 bg-white">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="case-studies" className="py-20 bg-mist relative">
+      {/* Decorative elements */}
+      <div className="absolute inset-0 opacity-5">
+        <TreeDeciduous className="absolute top-10 left-10 text-forest-dark" size={52} />
+        <TreeDeciduous className="absolute bottom-20 right-20 text-moss" size={48} />
+      </div>
+
+      <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Case Studies</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-forest-dark mb-6">Case Studies</h2>
+          <p className="text-xl text-forest-medium max-w-3xl mx-auto">
             Real challenges, strategic solutions, and measurable outcomes that demonstrate the impact of effective leadership.
           </p>
         </div>
 
         <div className="space-y-16">
           {caseStudies.map((study, index) => (
-            <div key={index} className="bg-gray-50 rounded-2xl overflow-hidden">
+            <div key={index} className="bg-white/90 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl border border-sage/30">
               <div className="p-8 md:p-12">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
                   <div>
-                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">{study.title}</h3>
-                    <p className="text-lg text-blue-600 font-medium">{study.company}</p>
+                    <h3 className="text-2xl md:text-3xl font-bold text-forest-dark mb-2">{study.title}</h3>
+                    <p className="text-lg text-moss font-medium">{study.company}</p>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-4 mt-4 md:mt-0">
-                    <div className="flex items-center space-x-2 text-gray-600">
+                    <div className="flex items-center space-x-2 text-forest-medium">
                       <Calendar size={16} />
                       <span className="text-sm font-medium">{study.duration}</span>
                     </div>
-                    <div className="flex items-center space-x-2 text-gray-600">
+                    <div className="flex items-center space-x-2 text-forest-medium">
                       <Users size={16} />
                       <span className="text-sm font-medium">{study.teamSize}</span>
                     </div>
@@ -68,29 +74,29 @@ const CaseStudies = () => {
 
                 <div className="grid md:grid-cols-2 gap-8 mb-8">
                   <div>
-                    <h4 className="text-xl font-bold text-gray-900 mb-4">The Challenge</h4>
-                    <p className="text-gray-600 leading-relaxed mb-6">{study.challenge}</p>
+                    <h4 className="text-xl font-bold text-forest-dark mb-4">The Challenge</h4>
+                    <p className="text-forest-medium leading-relaxed mb-6">{study.challenge}</p>
                     
-                    <h4 className="text-xl font-bold text-gray-900 mb-4">The Solution</h4>
-                    <p className="text-gray-600 leading-relaxed">{study.solution}</p>
+                    <h4 className="text-xl font-bold text-forest-dark mb-4">The Solution</h4>
+                    <p className="text-forest-medium leading-relaxed">{study.solution}</p>
                   </div>
 
                   <div>
-                    <h4 className="text-xl font-bold text-gray-900 mb-4">Results Achieved</h4>
+                    <h4 className="text-xl font-bold text-forest-dark mb-4">Results Achieved</h4>
                     <ul className="space-y-3 mb-6">
                       {study.results.map((result, resultIndex) => (
                         <li key={resultIndex} className="flex items-start space-x-3">
-                          <TrendingUp className="text-green-600 mt-1 flex-shrink-0" size={16} />
-                          <span className="text-gray-600">{result}</span>
+                          <TrendingUp className="text-sage mt-1 flex-shrink-0" size={16} />
+                          <span className="text-forest-medium">{result}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
                 </div>
 
-                <div className="bg-white rounded-xl p-6">
-                  <h4 className="text-xl font-bold text-gray-900 mb-3">Key Insights</h4>
-                  <p className="text-gray-600 leading-relaxed italic">{study.insights}</p>
+                <div className="bg-sage/10 rounded-xl p-6 border border-sage/20">
+                  <h4 className="text-xl font-bold text-forest-dark mb-3">Key Insights</h4>
+                  <p className="text-forest-medium leading-relaxed italic">{study.insights}</p>
                 </div>
               </div>
             </div>
@@ -98,10 +104,10 @@ const CaseStudies = () => {
         </div>
 
         <div className="text-center mt-16">
-          <p className="text-lg text-gray-600 mb-6">Interested in learning more about these projects?</p>
+          <p className="text-lg text-forest-medium mb-6">Interested in learning more about these projects?</p>
           <button
             onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}
-            className="inline-flex items-center space-x-2 px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium"
+            className="inline-flex items-center space-x-2 px-8 py-3 bg-forest-dark text-white rounded-lg hover:bg-forest-medium transition-all duration-300 font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
             <span>Let's Discuss</span>
             <ArrowRight size={20} />

@@ -1,8 +1,9 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+/* Pacific Northwest Design System */
 
 @layer base {
   :root {
@@ -37,47 +38,42 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Pacific Northwest Color Palette */
+    --forest-dark: 158 64% 12%;
+    --forest-medium: 158 50% 20%;
+    --forest-light: 158 40% 30%;
+    --sage: 120 20% 60%;
+    --moss: 100 30% 35%;
+    --stone: 30 5% 65%;
+    --mist: 200 20% 95%;
+    --cedar: 25 25% 45%;
   }
 
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
-
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
-
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
-
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
-
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
-
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
-
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
@@ -100,4 +96,51 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Pacific Northwest Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out;
+}
+
+/* Mountain silhouette background */
+.mountain-bg {
+  background: linear-gradient(180deg, 
+    hsl(var(--mist)) 0%, 
+    hsl(var(--sage)) 40%, 
+    hsl(var(--forest-light)) 70%, 
+    hsl(var(--forest-dark)) 100%);
+}
+
+.forest-gradient {
+  background: linear-gradient(135deg, 
+    hsl(var(--forest-dark)) 0%, 
+    hsl(var(--forest-medium)) 50%, 
+    hsl(var(--moss)) 100%);
+}
+
+.nature-accent {
+  background: linear-gradient(45deg, 
+    hsl(var(--sage)) 0%, 
+    hsl(var(--moss)) 100%);
 }
