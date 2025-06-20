@@ -26,7 +26,7 @@ const About = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-forest-dark mb-2">Background</h3>
-                <p className="text-forest-medium leading-relaxed">With 25+ years in product design and over a decade in leadership, I’ve guided teams through growth and change at companies like Etsy and Walmart—shaping strategy, mentoring leaders, and aligning cross-functional teams. At Etsy, I led design for Fulfillment, Search, and Ads; at Walmart, I drove key eCommerce initiatives, including reimagining grocery pickup during the pandemic. Across every role, I’ve remained committed to crafting thoughtful, human-centered experiences and building teams empowered to do their best work.</p>
+                <p className="text-forest-medium leading-relaxed">I’m a product design leader with 25+ years of experience turning complex problems into meaningful outcomes — by guiding teams, shaping culture, and building thoughtful, scalable design solutions across eCommerce, health tech, and omnichannel platforms.</p>
               </div>
             </div>
 
@@ -37,9 +37,7 @@ const About = () => {
               <div>
                 <h3 className="text-xl font-semibold text-forest-dark mb-2">Passion</h3>
                 <p className="text-forest-medium leading-relaxed">
-                  I'm driven by the opportunity to develop people, solve complex challenges, 
-                  and create environments where innovation thrives. Nothing energizes me more 
-                  than seeing teams exceed their own expectations and achieve breakthrough results.
+                  I believe great design starts with empathy, scales with systems thinking, and succeeds through collaboration. Whether leading design at Brightside Health, Etsy, or Walmart, I focus on aligning teams around clear goals, supporting individual growth, and delivering thoughtful, high-impact experiences.
                 </p>
               </div>
             </div>
@@ -49,11 +47,11 @@ const About = () => {
                 <Target className="text-forest-dark" size={24} />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-forest-dark mb-2">Mission</h3>
+                <h3 className="text-xl font-semibold text-forest-dark mb-2">Outside of Work</h3>
                 <p className="text-forest-medium leading-relaxed">
-                  To empower organizations and individuals to reach their full potential through 
-                  authentic leadership, strategic thinking, and a relentless focus on sustainable growth 
-                  and positive impact.
+                  I’m a dad of two, a fan of quiet weekends on our 20-acre rural property, and married to a pastry chef who runs a local cooking school. Food, friends, and meaningful conversations are my happy place.
+<br>Also, I have a framed picture of Yoda in a three-piece suit hanging in my office. Interpret that however you’d like.
+
                 </p>
               </div>
             </div>
