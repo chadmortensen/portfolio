@@ -13,9 +13,7 @@ const Hero = () => {
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-10">
         
-        <TreePine className="absolute top-32 right-20 text-forest-medium" size={28} style={{
-        animationDelay: '2s'
-      }} />
+        
         <Mountain className="absolute bottom-40 left-1/4 text-forest-light animate-float" size={40} style={{
         animationDelay: '4s'
       }} />
