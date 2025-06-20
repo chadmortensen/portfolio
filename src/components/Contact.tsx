@@ -30,8 +30,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sage">Email</p>
-                  <a href="mailto:your.email@example.com" className="text-white font-medium hover:text-sage transition-colors">
-                    your.email@example.com
+                  <a href="mailto:chadmor@gmail.com" className="text-white font-medium hover:text-sage transition-colors">
+                    chadmor@gmail.com
                   </a>
                 </div>
               </div>
@@ -42,8 +42,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sage">LinkedIn</p>
-                  <a href="#" className="text-white font-medium hover:text-sage transition-colors">
-                    linkedin.com/in/yourprofile
+                  <a href="https://linkedin.com/in/chadmortensen" className="text-white font-medium hover:text-sage transition-colors">
+                    linkedin.com/in/chadmortensen
                   </a>
                 </div>
               </div>
@@ -54,8 +54,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sage">Phone</p>
-                  <a href="tel:+1234567890" className="text-white font-medium hover:text-sage transition-colors">
-                    +1 (234) 567-8900
+                  <a href="tel:+15033470199" className="text-white font-medium hover:text-sage transition-colors">
+                    (503) 347-0199
                   </a>
                 </div>
               </div>
@@ -66,7 +66,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sage">Location</p>
-                  <p className="text-white font-medium">Your City, State</p>
+                  <p className="text-white font-medium">Portland, Oregon</p>
                 </div>
               </div>
             </div>
@@ -75,7 +75,7 @@ const Contact = () => {
 
         <div className="text-center mt-16 pt-8 border-t border-forest-medium">
           <p className="text-sage">
-            © 2024 [Your Name]. All rights reserved.
+            © 2024 Chad Mortensen. All rights reserved.
           </p>
         </div>
       </div>
