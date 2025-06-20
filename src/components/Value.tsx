@@ -1,5 +1,4 @@
-
-import { TrendingUp, Shield, Rocket, Star, River } from "lucide-react";
+import { TrendingUp, Shield, Rocket, Star, Waves } from "lucide-react";
 
 const Value = () => {
   const valueProps = [
@@ -29,8 +28,8 @@ const Value = () => {
     <section id="value" className="py-20 bg-white relative">
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-5">
-        <River className="absolute top-20 left-1/4 text-forest-dark" size={44} />
-        <River className="absolute bottom-40 right-1/3 text-moss" size={40} />
+        <Waves className="absolute top-20 left-1/4 text-forest-dark" size={44} />
+        <Waves className="absolute bottom-40 right-1/3 text-moss" size={40} />
       </div>
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
