@@ -46,7 +46,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <TreePine className="text-forest-dark" size={24} />
-            <span className="text-xl font-bold text-forest-dark">Chad Mortensen's Portfolio</span>
+            <span className="text-xl font-bold text-forest-dark">Chad Mortensen</span>
           </div>
           
           {/* Desktop Navigation */}
