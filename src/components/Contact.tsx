@@ -1,5 +1,4 @@
-
-import { Mail, LinkedIn, Phone, MapPin } from "lucide-react";
+import { Mail, Linkedin, Phone, MapPin } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -31,7 +30,7 @@ const Contact = () => {
 
               <div className="flex items-center space-x-4">
                 <div className="bg-blue-600 p-3 rounded-lg">
-                  <LinkedIn size={24} />
+                  <Linkedin size={24} />
                 </div>
                 <div>
                   <p className="text-gray-300">LinkedIn</p>
