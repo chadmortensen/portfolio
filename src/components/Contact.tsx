@@ -15,7 +15,7 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Let's Connect</h2>
           <p className="text-xl text-sage max-w-3xl mx-auto">
-            Ready to discuss how we can work together to drive exceptional results? 
+            Ready to chat? 
             I'd love to hear about your challenges and explore potential opportunities.
           </p>
         </div>
