@@ -26,7 +26,7 @@ const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
             Hello, I'm
-            <span className="block bg-gradient-to-r from-sage to-moss bg-clip-text text-green-950">Chad Mortensen</span>
+            <span className="block bg-gradient-to-r from-sage to-moss bg-clip-text text-yellow-400">Chad Mortensen</span>
           </h1>
           <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-md text-center text-slate-100 md:text-2xl">I’m a product design leader with 25+ years of experience turning complex problems into meaningful outcomes — by guiding teams, shaping culture, and building thoughtful, scalable design solutions across eCommerce, health tech, and omnichannel platforms.
         </p>
