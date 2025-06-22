@@ -1,27 +1,27 @@
 
-import { Users, Lightbulb, Compass, Zap, Mountain } from "lucide-react";
+import { Shield, TrendingUp, Users, Award, Mountain } from "lucide-react";
 
 const Leadership = () => {
-  const philosophies = [
+  const principles = [
+    {
+      icon: Shield,
+      title: "Transparency builds trust",
+      description: "I lead with honesty and clarity — sharing context, being direct, and creating space for open conversations. Trust starts with being someone your team can count on."
+    },
+    {
+      icon: TrendingUp,
+      title: "Celebrate progress, not just outcomes",
+      description: "Design is demanding — it's easy to skip the moments that matter. I make time to recognize great work, reflect on what we've learned, and keep morale high."
+    },
     {
       icon: Users,
-      title: "People First",
-      description: "Great results come from empowered, motivated people. I believe in investing in individuals, creating psychological safety, and fostering an environment where everyone can do their best work."
+      title: "Diverse perspectives make better products",
+      description: "I believe the best teams reflect a range of backgrounds and experiences. Diversity makes our work stronger, more inclusive, and more relevant."
     },
     {
-      icon: Lightbulb,
-      title: "Continuous Learning",
-      description: "In a rapidly changing world, the ability to learn and adapt is crucial. I promote a culture of curiosity, experimentation, and continuous improvement at both individual and organizational levels."
-    },
-    {
-      icon: Compass,
-      title: "Purpose-Driven Leadership",
-      description: "Clear vision and strong values guide every decision. I believe in connecting daily work to meaningful outcomes and ensuring everyone understands how they contribute to the bigger picture."
-    },
-    {
-      icon: Zap,
-      title: "Decisive Action",
-      description: "Great leaders make informed decisions quickly and execute with conviction. I balance thorough analysis with the need for speed, always keeping momentum while managing risk effectively."
+      icon: Award,
+      title: "Craft matters — and so does accountability",
+      description: "I set a high bar for quality, while supporting accountability and growth. Our work should be effective, thoughtful — and something we're proud to stand behind."
     }
   ];
 
@@ -35,38 +35,29 @@ const Leadership = () => {
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-forest-dark mb-6">Leadership Philosophy</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-forest-dark mb-6">My Leadership Style</h2>
           <p className="text-xl text-forest-medium max-w-3xl mx-auto">
-            My approach to leadership is built on fundamental principles that drive sustainable success and meaningful impact.
+            Leading design teams is about more than setting direction — it's about creating an environment where people can thrive, grow, and do their best work. Here's what I believe makes that possible:
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          {philosophies.map((philosophy, index) => (
+          {principles.map((principle, index) => (
             <div
               key={index}
               className="bg-white/80 backdrop-blur-sm rounded-xl p-8 hover:bg-white transition-all duration-300 shadow-lg border border-sage/20"
             >
               <div className="flex items-start space-x-4">
                 <div className="bg-sage/30 p-3 rounded-lg">
-                  <philosophy.icon className="text-forest-dark" size={24} />
+                  <principle.icon className="text-forest-dark" size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-forest-dark mb-3">{philosophy.title}</h3>
-                  <p className="text-forest-medium leading-relaxed">{philosophy.description}</p>
+                  <h3 className="text-xl font-bold text-forest-dark mb-3">{principle.title}</h3>
+                  <p className="text-forest-medium leading-relaxed">{principle.description}</p>
                 </div>
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="forest-gradient rounded-2xl p-8 md:p-12 text-white text-center shadow-xl">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">My Leadership Commitment</h3>
-          <p className="text-lg md:text-xl opacity-90 max-w-4xl mx-auto leading-relaxed">
-            "I commit to leading with authenticity, creating conditions for others to thrive, 
-            and building organizations that deliver exceptional results while making a positive impact on the world. 
-            Every decision I make is guided by these principles and a deep respect for the people I have the privilege to lead."
-          </p>
         </div>
       </div>
     </section>
