@@ -1,8 +1,9 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Pacific Northwest Design System */
+/* Deep Forest Green Design System */
 
 @layer base {
   :root {
@@ -45,24 +46,20 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    /* Pacific Northwest Color Palette */
-    --forest-dark: 158 64% 12%;
-    --forest-medium: 158 50% 20%;
-    --forest-light: 158 40% 30%;
-    --sage: 120 20% 60%;
-    --moss: 100 30% 35%;
-    --stone: 30 5% 65%;
-    --mist: 200 20% 95%;
-    --cedar: 25 25% 45%;
+    /* Deep Forest Green Color Palette */
+    --forest-dark: 158 85% 8%;
+    --forest-medium: 158 75% 15%;
+    --forest-light: 158 65% 25%;
+    --sage: 120 25% 55%;
+    --moss: 100 40% 30%;
+    --stone: 30 8% 60%;
+    --mist: 200 25% 92%;
+    --cedar: 25 30% 40%;
 
-    /* Blue and Gold Color Palette */
-    --navy-dark: 220 85% 15%;
-    --navy-medium: 220 70% 25%;
-    --navy-light: 220 50% 40%;
-    --royal: 230 80% 50%;
-    --gold-dark: 45 100% 35%;
-    --gold-medium: 45 100% 50%;
-    --gold-light: 45 100% 70%;
+    /* Emerald accent colors */
+    --emerald-dark: 150 100% 20%;
+    --emerald-medium: 150 80% 35%;
+    --emerald-light: 150 60% 50%;
     --cream: 45 50% 95%;
   }
 
@@ -107,7 +104,7 @@
   }
 }
 
-/* Pacific Northwest Animations */
+/* Deep Forest Green Animations */
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
@@ -132,22 +129,14 @@
   animation: fade-in 0.8s ease-out;
 }
 
-/* Mountain silhouette background */
-.mountain-bg {
+/* Deep forest gradient backgrounds */
+.deep-forest-bg {
   background: linear-gradient(180deg, 
     hsl(var(--mist)) 0%, 
-    hsl(var(--sage)) 40%, 
-    hsl(var(--forest-light)) 70%, 
+    hsl(var(--sage)) 30%, 
+    hsl(var(--forest-light)) 60%, 
+    hsl(var(--forest-medium)) 85%, 
     hsl(var(--forest-dark)) 100%);
-}
-
-/* Blue and gold gradient backgrounds */
-.blue-gold-bg {
-  background: linear-gradient(180deg, 
-    hsl(var(--cream)) 0%, 
-    hsl(var(--royal)) 40%, 
-    hsl(var(--navy-medium)) 70%, 
-    hsl(var(--navy-dark)) 100%);
 }
 
 .forest-gradient {
@@ -159,6 +148,6 @@
 
 .nature-accent {
   background: linear-gradient(45deg, 
-    hsl(var(--sage)) 0%, 
-    hsl(var(--moss)) 100%);
+    hsl(var(--emerald-medium)) 0%, 
+    hsl(var(--emerald-light)) 100%);
 }

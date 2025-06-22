@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -62,7 +63,7 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Pacific Northwest palette
+				// Deep Forest Green palette
 				forest: {
 					dark: 'hsl(var(--forest-dark))',
 					medium: 'hsl(var(--forest-medium))',
@@ -73,17 +74,11 @@ export default {
 				stone: 'hsl(var(--stone))',
 				mist: 'hsl(var(--mist))',
 				cedar: 'hsl(var(--cedar))',
-				// Blue and gold palette
-				navy: {
-					dark: 'hsl(var(--navy-dark))',
-					medium: 'hsl(var(--navy-medium))',
-					light: 'hsl(var(--navy-light))'
-				},
-				royal: 'hsl(var(--royal))',
-				gold: {
-					dark: 'hsl(var(--gold-dark))',
-					medium: 'hsl(var(--gold-medium))',
-					light: 'hsl(var(--gold-light))'
+				// Accent colors that work with deep forest
+				emerald: {
+					dark: 'hsl(var(--emerald-dark))',
+					medium: 'hsl(var(--emerald-medium))',
+					light: 'hsl(var(--emerald-light))'
 				},
 				cream: 'hsl(var(--cream))'
 			},
