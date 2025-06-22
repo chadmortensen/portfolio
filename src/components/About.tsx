@@ -18,8 +18,9 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+        <div className="space-y-12">
+          {/* Background Section */}
+          <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="flex items-start space-x-4">
               <div className="bg-sage/20 p-3 rounded-lg">
                 <User className="text-forest-dark" size={24} />
@@ -29,8 +30,25 @@ const About = () => {
                 <p className="text-forest-medium leading-relaxed">I'm a product design leader with 25+ years of experience turning complex problems into meaningful outcomes — by guiding teams, shaping culture, and building thoughtful, scalable design solutions across eCommerce, health tech, and omnichannel platforms.</p>
               </div>
             </div>
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-sage/20">
+              <img 
+                src="/placeholder.svg?height=200&width=300" 
+                alt="Professional workspace with laptop" 
+                className="w-full h-48 object-cover rounded-lg"
+              />
+            </div>
+          </div>
 
-            <div className="flex items-start space-x-4">
+          {/* Passion Section */}
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-sage/20 md:order-1">
+              <img 
+                src="/placeholder.svg?height=200&width=300" 
+                alt="Collaborative design process" 
+                className="w-full h-48 object-cover rounded-lg"
+              />
+            </div>
+            <div className="flex items-start space-x-4 md:order-2">
               <div className="bg-moss/20 p-3 rounded-lg">
                 <Heart className="text-forest-dark" size={24} />
               </div>
@@ -41,7 +59,10 @@ const About = () => {
                 </p>
               </div>
             </div>
+          </div>
 
+          {/* Outside of Work Section */}
+          <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="flex items-start space-x-4">
               <div className="bg-sage/30 p-3 rounded-lg">
                 <Target className="text-forest-dark" size={24} />
@@ -55,27 +76,12 @@ const About = () => {
                 </p>
               </div>
             </div>
-          </div>
-
-          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-sage/20">
-            <h3 className="text-2xl font-bold text-forest-dark mb-6">Quick Facts</h3>
-            <div className="space-y-4">
-              <div className="flex justify-between border-b border-sage/20 pb-2">
-                <span className="text-forest-medium">Years of Experience</span>
-                <span className="font-semibold text-forest-dark">25+ years</span>
-              </div>
-              <div className="flex justify-between border-b border-sage/20 pb-2">
-                <span className="text-forest-medium">Teams Led</span>
-                <span className="font-semibold text-forest-dark">18+ people</span>
-              </div>
-              <div className="flex justify-between border-b border-sage/20 pb-2">
-                <span className="text-forest-medium">Projects Delivered</span>
-                <span className="font-semibold text-forest-dark">1000+ projects</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-forest-medium">Favorite Quote</span>
-                <span className="font-semibold text-forest-dark text-right">"We are all people, working with other people to help people" - Me</span>
-              </div>
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-sage/20">
+              <img 
+                src="/placeholder.svg?height=200&width=300" 
+                alt="Rural landscape with mountains and trees" 
+                className="w-full h-48 object-cover rounded-lg"
+              />
             </div>
           </div>
         </div>
