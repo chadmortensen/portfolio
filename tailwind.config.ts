@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -73,7 +72,20 @@ export default {
 				moss: 'hsl(var(--moss))',
 				stone: 'hsl(var(--stone))',
 				mist: 'hsl(var(--mist))',
-				cedar: 'hsl(var(--cedar))'
+				cedar: 'hsl(var(--cedar))',
+				// Blue and gold palette
+				navy: {
+					dark: 'hsl(var(--navy-dark))',
+					medium: 'hsl(var(--navy-medium))',
+					light: 'hsl(var(--navy-light))'
+				},
+				royal: 'hsl(var(--royal))',
+				gold: {
+					dark: 'hsl(var(--gold-dark))',
+					medium: 'hsl(var(--gold-medium))',
+					light: 'hsl(var(--gold-light))'
+				},
+				cream: 'hsl(var(--cream))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

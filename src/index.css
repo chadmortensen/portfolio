@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -55,6 +54,16 @@
     --stone: 30 5% 65%;
     --mist: 200 20% 95%;
     --cedar: 25 25% 45%;
+
+    /* Blue and Gold Color Palette */
+    --navy-dark: 220 85% 15%;
+    --navy-medium: 220 70% 25%;
+    --navy-light: 220 50% 40%;
+    --royal: 230 80% 50%;
+    --gold-dark: 45 100% 35%;
+    --gold-medium: 45 100% 50%;
+    --gold-light: 45 100% 70%;
+    --cream: 45 50% 95%;
   }
 
   .dark {
@@ -130,6 +139,15 @@
     hsl(var(--sage)) 40%, 
     hsl(var(--forest-light)) 70%, 
     hsl(var(--forest-dark)) 100%);
+}
+
+/* Blue and gold gradient backgrounds */
+.blue-gold-bg {
+  background: linear-gradient(180deg, 
+    hsl(var(--cream)) 0%, 
+    hsl(var(--royal)) 40%, 
+    hsl(var(--navy-medium)) 70%, 
+    hsl(var(--navy-dark)) 100%);
 }
 
 .forest-gradient {
