@@ -26,7 +26,7 @@ const About = () => {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-forest-dark mb-2">Background</h3>
-                <p className="text-forest-medium leading-relaxed">I’m a product design leader with 25+ years of experience turning complex problems into meaningful outcomes — by guiding teams, shaping culture, and building thoughtful, scalable design solutions across eCommerce, health tech, and omnichannel platforms.</p>
+                <p className="text-forest-medium leading-relaxed">I'm a product design leader with 25+ years of experience turning complex problems into meaningful outcomes — by guiding teams, shaping culture, and building thoughtful, scalable design solutions across eCommerce, health tech, and omnichannel platforms.</p>
               </div>
             </div>
 
@@ -49,9 +49,9 @@ const About = () => {
               <div>
                 <h3 className="text-xl font-semibold text-forest-dark mb-2">Outside of Work</h3>
                 <p className="text-forest-medium leading-relaxed">
-                  I’m a dad of two, a fan of quiet weekends on our 20-acre rural property, and married to a pastry chef who runs a local cooking school. Food, friends, and meaningful conversations are my happy place.
-<br>Also, I have a framed picture of Yoda in a three-piece suit hanging in my office. Interpret that however you’d like.
-
+                  I'm a dad of two, a fan of quiet weekends on our 20-acre rural property, and married to a pastry chef who runs a local cooking school. Food, friends, and meaningful conversations are my happy place.
+                  <br />
+                  Also, I have a framed picture of Yoda in a three-piece suit hanging in my office. Interpret that however you'd like.
                 </p>
               </div>
             </div>
