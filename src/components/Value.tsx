@@ -1,4 +1,3 @@
-
 import { TrendingUp, Shield, Rocket, Star, Waves } from "lucide-react";
 
 const Value = () => {
@@ -26,7 +25,7 @@ const Value = () => {
   ];
 
   return (
-    <section id="value" className="py-20 bg-sage/20 relative">
+    <section id="value" className="py-20 bg-mist relative">
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-5">
         <Waves className="absolute top-20 left-1/4 text-forest-dark" size={44} />

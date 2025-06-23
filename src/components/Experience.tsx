@@ -1,4 +1,3 @@
-
 import { Briefcase, Calendar, TreePine } from "lucide-react";
 
 const Experience = () => {
@@ -69,7 +68,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-sage/20 relative">
+    <section id="experience" className="py-20 bg-mist relative">
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-5">
         <TreePine className="absolute top-20 left-10 text-forest-dark" size={40} />
