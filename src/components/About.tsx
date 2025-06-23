@@ -1,5 +1,5 @@
 
-import { User, Heart, Target, TreeDeciduous } from "lucide-react";
+import { TreeDeciduous } from "lucide-react";
 
 const About = () => {
   return (
@@ -28,14 +28,9 @@ const About = () => {
                 className="w-full h-48 object-cover rounded-lg"
               />
             </div>
-            <div className="flex items-start space-x-4">
-              <div className="bg-sage/20 p-3 rounded-lg">
-                <User className="text-forest-dark" size={24} />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-forest-dark mb-2">Background</h3>
-                <p className="text-forest-medium leading-relaxed">I'm a product design leader with 25+ years of experience turning complex problems into meaningful outcomes — by guiding teams, shaping culture, and building thoughtful, scalable design solutions across eCommerce, health tech, and omnichannel platforms.</p>
-              </div>
+            <div>
+              <h3 className="text-xl font-semibold text-forest-dark mb-2">Background</h3>
+              <p className="text-forest-medium leading-relaxed">I'm a product design leader with 25+ years of experience turning complex problems into meaningful outcomes — by guiding teams, shaping culture, and building thoughtful, scalable design solutions across eCommerce, health tech, and omnichannel platforms.</p>
             </div>
           </div>
 
@@ -48,16 +43,11 @@ const About = () => {
                 className="w-full h-48 object-cover rounded-lg"
               />
             </div>
-            <div className="flex items-start space-x-4">
-              <div className="bg-moss/20 p-3 rounded-lg">
-                <Heart className="text-forest-dark" size={24} />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-forest-dark mb-2">Passion</h3>
-                <p className="text-forest-medium leading-relaxed">
-                  I believe great design starts with empathy, scales with systems thinking, and succeeds through collaboration. Whether leading design at Brightside Health, Etsy, or Walmart, I focus on aligning teams around clear goals, supporting individual growth, and delivering thoughtful, high-impact experiences.
-                </p>
-              </div>
+            <div>
+              <h3 className="text-xl font-semibold text-forest-dark mb-2">Passion</h3>
+              <p className="text-forest-medium leading-relaxed">
+                I believe great design starts with empathy, scales with systems thinking, and succeeds through collaboration. Whether leading design at Brightside Health, Etsy, or Walmart, I focus on aligning teams around clear goals, supporting individual growth, and delivering thoughtful, high-impact experiences.
+              </p>
             </div>
           </div>
 
@@ -70,18 +60,13 @@ const About = () => {
                 className="w-full h-48 object-cover rounded-lg"
               />
             </div>
-            <div className="flex items-start space-x-4">
-              <div className="bg-sage/30 p-3 rounded-lg">
-                <Target className="text-forest-dark" size={24} />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-forest-dark mb-2">Outside of Work</h3>
-                <p className="text-forest-medium leading-relaxed">
-                  I'm a dad of two, a fan of quiet weekends on our 20-acre rural property, and married to a pastry chef who runs a local cooking school. Food, friends, and meaningful conversations are my happy place.
-                  <br />
-                  Also, I have a framed picture of Yoda in a three-piece suit hanging in my office. Interpret that however you'd like.
-                </p>
-              </div>
+            <div>
+              <h3 className="text-xl font-semibold text-forest-dark mb-2">Outside of Work</h3>
+              <p className="text-forest-medium leading-relaxed">
+                I'm a dad of two, a fan of quiet weekends on our 20-acre rural property, and married to a pastry chef who runs a local cooking school. Food, friends, and meaningful conversations are my happy place.
+                <br />
+                Also, I have a framed picture of Yoda in a three-piece suit hanging in my office. Interpret that however you'd like.
+              </p>
             </div>
           </div>
         </div>
