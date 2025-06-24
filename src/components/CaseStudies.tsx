@@ -122,17 +122,6 @@ const CaseStudies = () => {
             </div>
           ))}
         </div>
-
-        <div className="text-center mt-16">
-          <p className="text-lg text-forest-medium mb-6">Interested in learning more about these projects?</p>
-          <button
-            onClick={() => document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" })}
-            className="inline-flex items-center space-x-2 px-8 py-3 bg-forest-dark text-white rounded-lg hover:bg-forest-medium transition-all duration-300 font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-          >
-            <span>Let's Discuss</span>
-            <ArrowRight size={20} />
-          </button>
-        </div>
       </div>
     </section>
   );
