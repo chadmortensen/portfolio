@@ -1,5 +1,7 @@
+
 import { ArrowDown } from "lucide-react";
 import { TreePine, Mountain } from "lucide-react";
+
 const Hero = () => {
   const scrollToAbout = () => {
     const aboutSection = document.querySelector("#about");
@@ -9,7 +11,18 @@ const Hero = () => {
       });
     }
   };
-  return <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden deep-forest-bg">
+
+  return (
+    <section 
+      id="home" 
+      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+      style={{
+        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%), url('https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=3072&q=80')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-15">
         <Mountain className="absolute bottom-40 left-1/4 text-emerald-light animate-float" size={40} style={{
@@ -45,6 +58,8 @@ const Hero = () => {
           <ArrowDown size={32} />
         </button>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
