@@ -1,3 +1,4 @@
+
 import { TrendingUp, Shield, Rocket, Star, Waves } from "lucide-react";
 
 const Value = () => {
@@ -40,7 +41,7 @@ const Value = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8">
           {valueProps.map((value, index) => (
             <div
               key={index}
@@ -57,32 +58,6 @@ const Value = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-xl border border-sage/30">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-forest-dark mb-4">Measurable Impact</h3>
-            <p className="text-lg text-forest-medium">Results that demonstrate the value of strategic leadership</p>
-          </div>
-          
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-moss mb-2">[X]%</div>
-              <p className="text-forest-medium">Revenue Growth</p>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-forest-medium mb-2">[X]%</div>
-              <p className="text-forest-medium">Efficiency Improvement</p>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-sage mb-2">[X]%</div>
-              <p className="text-forest-medium">Team Satisfaction</p>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-cedar mb-2">$[X]M</div>
-              <p className="text-forest-medium">Cost Savings</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
