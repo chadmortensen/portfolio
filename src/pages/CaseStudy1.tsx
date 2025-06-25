@@ -1,9 +1,15 @@
 
 import { ArrowLeft, Calendar, Users, TrendingUp, Target, Lightbulb, Award, Baby } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const CaseStudy1 = () => {
   const navigate = useNavigate();
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="min-h-screen bg-mist">
