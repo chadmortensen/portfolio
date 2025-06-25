@@ -1,7 +1,5 @@
-
 import { ArrowDown } from "lucide-react";
 import { TreePine, Mountain } from "lucide-react";
-
 const Hero = () => {
   const scrollToAbout = () => {
     const aboutSection = document.querySelector("#about");
@@ -11,18 +9,12 @@ const Hero = () => {
       });
     }
   };
-
-  return (
-    <section 
-      id="home" 
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
-      style={{
-        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%), url('https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-4.0.3&auto=format&fit=crop&w=3648&q=80')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
+  return <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden" style={{
+    backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%), url('https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-4.0.3&auto=format&fit=crop&w=3648&q=80')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  }}>
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-15">
         <Mountain className="absolute bottom-40 left-1/4 text-emerald-light animate-float" size={40} style={{
@@ -39,9 +31,10 @@ const Hero = () => {
             Hello, I'm
             <span className="block bg-gradient-to-r from-emerald-medium to-emerald-light bg-clip-text text-yellow-300">Chad Mortensen</span>
           </h1>
-          <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-md text-center text-slate-100 md:text-2xl">
-            I'm a product design leader with 25+ years of experience turning complex problems into meaningful outcomes — by guiding teams, shaping culture, and building thoughtful, scalable design solutions across eCommerce, health tech, and omnichannel platforms.
-          </p>
+          <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-md text-center text-slate-100 md:text-2xl">I'm a product design leader with 25+ years of experience turning complex problems into meaningful outcomes — by guiding teams, shaping culture, and building thoughtful, scalable design solutions across eCommerce, health tech, and omnichannel platforms. 
+
+
+FYI, this portfolio site was 100% vibe coded & designed, allowing me to experiment with these emerging tools.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <button onClick={scrollToAbout} className="px-8 py-3 bg-forest-dark text-white rounded-lg hover:bg-forest-medium transition-all duration-300 font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-1">
               Learn About Me
@@ -58,8 +51,6 @@ const Hero = () => {
           <ArrowDown size={32} />
         </button>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
