@@ -31,7 +31,7 @@ const Hero = () => {
             Hello, I'm
             <span className="block bg-gradient-to-r from-emerald-medium to-emerald-light bg-clip-text text-yellow-300">Chad Mortensen</span>
           </h1>
-          <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-md text-center text-slate-100 md:text-2xl">I'm a product design leader with 25+ years of experience turning complex problems into meaningful outcomes — by guiding teams, shaping culture, and building thoughtful, scalable design solutions across eCommerce, health tech, and omnichannel platforms. 
+          <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-md text-center text-slate-100 md:text-2xl">I'm a product design leader with 25+ years of experience turning complex problems into meaningful outcomes — by guiding teams, shaping culture, and building thoughtful, scalable design solutions across eCommerce, health tech, and omnichannel platforms.  
 
 
 FYI, this portfolio site was 100% vibe coded & designed, allowing me to experiment with these emerging tools.</p>
