@@ -23,7 +23,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-sage/20">
               <img 
-                src="/placeholder.svg?height=200&width=300" 
+                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
                 alt="Professional workspace with laptop" 
                 className="w-full h-48 object-cover rounded-lg"
               />
@@ -38,7 +38,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-sage/20">
               <img 
-                src="/placeholder.svg?height=200&width=300" 
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
                 alt="Collaborative design process" 
                 className="w-full h-48 object-cover rounded-lg"
               />
@@ -55,7 +55,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-sage/20">
               <img 
-                src="/placeholder.svg?height=200&width=300" 
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
                 alt="Rural landscape with mountains and trees" 
                 className="w-full h-48 object-cover rounded-lg"
               />
