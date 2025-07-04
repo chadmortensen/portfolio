@@ -32,7 +32,7 @@ const Hero = () => {
             <span className="block bg-gradient-to-r from-emerald-medium to-emerald-light bg-clip-text text-yellow-300">Chad Mortensen</span>
           </h1>
           <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-md text-center text-slate-100 md:text-2xl">I'm a product design leader with 25+ years of experience turning complex problems into meaningful outcomes — by guiding teams, shaping culture, and building thoughtful, scalable design solutions across eCommerce, health tech, and omnichannel platforms.  
-<br /><br />
+          <br /><br />
 
 FYI, this portfolio site was 100% vibe coded & designed, allowing me to experiment with these emerging tools.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -41,7 +41,7 @@ FYI, this portfolio site was 100% vibe coded & designed, allowing me to experime
             </button>
             <button onClick={() => document.querySelector("#case-studies")?.scrollIntoView({
             behavior: "smooth"
-          })} className="px-8 py-3 border-2 border-emerald-medium text-white rounded-lg hover:bg-emerald-medium hover:text-forest-dark transition-all duration-300 font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+          })} className="px-8 py-3 border-2 border-white-medium text-white rounded-lg hover:bg-emerald-medium hover:text-forest-dark transition-all duration-300 font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-1">
               View My Work
             </button>
           </div>
